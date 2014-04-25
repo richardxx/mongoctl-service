@@ -18,12 +18,14 @@ from mongoctl.prompt import read_username, read_password
 
 from bson.son import SON
 
-from pymongo.connection import Connection
+from pymongo import MongoClient
 
 import datetime
 
 from mongoctl import config
 from mongoctl import users
+
+import traceback
 
 ###############################################################################
 # CONSTANTS
@@ -147,6 +149,9 @@ class Server(DocumentWrapper):
 
     ###########################################################################
     def get_host_address(self):
+        """
+        @return: Host set manually (may not be verified)
+        """
         if self.get_address() is not None:
             return self.get_address().split(":")[0]
         else:
@@ -154,11 +159,10 @@ class Server(DocumentWrapper):
 
     ###########################################################################
     def get_connection_host_address(self):
+        """
+        @return: Real address that can be connected to.
+        """
         return self.get_connection_address().split(":")[0]
-
-    ###########################################################################
-    def set_address(self, address):
-        self.set_property("address", address)
 
     ###########################################################################
     def get_local_address(self):
@@ -176,10 +180,6 @@ class Server(DocumentWrapper):
         if port is None:
             port = DEFAULT_PORT
         return port
-
-    ###########################################################################
-    def set_port(self, port):
-        self.set_cmd_option("port", port)
 
     ###########################################################################
     def is_fork(self):
@@ -495,11 +495,12 @@ class Server(DocumentWrapper):
     ###########################################################################
     def is_online(self):
         try:
-            self.new_db_connection()
-            return True
+            if self.get_db_connection() is not None:
+                return True
         except Exception, e:
             log_exception(e)
-            return False
+
+        return False
 
     ###########################################################################
     def can_function(self):
@@ -543,7 +544,7 @@ class Server(DocumentWrapper):
         log_debug("Checking if server '%s' needs to auth on  db '%s'...." %
                   (self.id, dbname))
         try:
-            conn = self.new_db_connection()
+            conn = self.get_db_connection()
             db = conn[dbname]
             db.collection_names()
             result = False
@@ -560,7 +561,10 @@ class Server(DocumentWrapper):
         status = {}
         ## check if the server is online
         try:
-            self.get_db_connection()
+            conn = self.get_db_connection()
+            if conn is None:
+                raise Exception("Cannot get server status")
+
             status['connection'] = True
 
             # grab status summary if it was specified + if i am not an arbiter
@@ -570,7 +574,6 @@ class Server(DocumentWrapper):
 
         except (RuntimeError, Exception), e:
             log_exception(e)
-            self.sever_db_connection()   # better luck next time!
             status['connection'] = False
             status['error'] = "%s" % e
             if "timed out" in status['error']:
@@ -590,19 +593,30 @@ class Server(DocumentWrapper):
 
     ###########################################################################
     def get_db_connection(self):
+        """
+        @return: May return None, please verify
+        """
         if self.__db_connection__ is None:
             self.__db_connection__ = self.new_db_connection()
         return self.__db_connection__
 
     ###########################################################################
-    def sever_db_connection(self):
+    def close_db_connection(self):
         if self.__db_connection__ is not None:
             self.__db_connection__.close()
         self.__db_connection__ = None
 
     ###########################################################################
     def new_db_connection(self):
-        return make_db_connection(self.get_connection_address())
+        """
+            Create a new connection to the server.
+            For internal use only.
+            @return:
+        """
+        address = self.get_connection_address()
+        if address is not None:
+            return self.__db_connection__
+        return None
 
     ###########################################################################
     def get_connection_address(self):
@@ -611,18 +625,16 @@ class Server(DocumentWrapper):
             return self._connection_address
 
         # try to get the first working connection address
-        if (self.is_use_local() and
-                self.has_connectivity_on(self.get_local_address())):
-            self._connection_address = self.get_local_address()
-        elif self.has_connectivity_on(self.get_address()):
-            self._connection_address = self.get_address()
+        maybe_address = ""
 
-        # use old logic
-        if not self._connection_address:
-            if self.is_use_local():
-                self._connection_address = self.get_local_address()
-            else:
-                self._connection_address = self.get_address()
+        if self.get_address() is not None:
+            maybe_address = self.get_address()
+        else:
+            # Default, use localhost
+            maybe_address = self.get_local_address()
+
+        if self.has_connectivity_on(maybe_address):
+            self._connection_address = maybe_address
 
         return self._connection_address
 
@@ -630,16 +642,18 @@ class Server(DocumentWrapper):
     ###########################################################################
     def has_connectivity_on(self, address):
 
-        try:
-            log_verbose("Checking if server '%s' is accessible on "
-                        "address '%s'" % (self.id, address))
-            make_db_connection(address)
-            return True
-        except Exception, e:
-            log_exception(e)
-            log_verbose("Check failed for server '%s' is accessible on "
-                        "address '%s': %s" % (self.id, address, e))
-            return False
+        if address is not None:
+            try:
+                log_verbose("Checking if server '%s' is accessible on "
+                            "address '%s'" % (self.id, address))
+                make_db_connection(address)
+                return True
+            except Exception, e:
+                log_exception(e)
+                log_verbose("Check failed for server '%s' is accessible on "
+                            "address '%s': %s" % (self.id, address, e))
+
+        return False
 
     ###########################################################################
     def get_rs_config(self):
@@ -738,11 +752,23 @@ class Server(DocumentWrapper):
 
 
 def make_db_connection(address):
+    """
+        Connect to a given database
+        @param address: in the form host:port
+        @return: pymongo connection
+    """
+    if address is None:
+        traceback.print_stack()
 
+    print "db connection address: %s" % address
     try:
-        return Connection(address,
+        tokens = address.split(":")
+        host = tokens[0]
+        port = tokens[1]
+        return MongoClient(host=host, port=int(port),
                           socketTimeoutMS=CONN_TIMEOUT,
                           connectTimeoutMS=CONN_TIMEOUT)
+
     except Exception, e:
         log_exception(e)
         error_msg = "Cannot connect to '%s'. Cause: %s" % \

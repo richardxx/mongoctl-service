@@ -328,9 +328,11 @@ def _start_server_process_4real(server, options_override=None):
     global __mongod_pid__
     global __current_server__
 
+    #DETACHED_PROCESS = 0x00000008
     parent_mongod = create_subprocess(start_cmd,
                                       stdout=child_process_out,
                                       preexec_fn=server_process_preexec)
+                                      #creationflags=DETACHED_PROCESS)
 
 
 

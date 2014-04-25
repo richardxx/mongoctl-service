@@ -20,6 +20,8 @@ def status_command(parsed_options):
 
     if server:
         # log_info("Status for server '%s':" % id)
+        print "Server Info:"
+        print server
         status = server.get_status(admin=True)
     else:
         cluster = repository.lookup_cluster(id)
@@ -35,6 +37,4 @@ def status_command(parsed_options):
     # if mongoctl.is_service() is False:
     #     stdout_log(status_str)
 
-    print "in status command:"
-    print status_str
     return status_str

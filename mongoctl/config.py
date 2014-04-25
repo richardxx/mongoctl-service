@@ -43,7 +43,8 @@ def set_mongoctl_config_val(key, value):
 
 ###############################################################################
 def get_database_repository_conf():
-    return get_mongoctl_config_val('databaseRepository')
+    db_config = get_mongoctl_config_val('databaseRepository')
+    return db_config
 
 ###############################################################################
 def get_file_repository_conf():

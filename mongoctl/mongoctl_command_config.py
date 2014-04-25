@@ -223,6 +223,14 @@ MONGOCTL_PARSER_DEF = {
                 },
 
                     {
+                    "name": "address",
+                    "type" : "optional",
+                    "cmd_arg":  "--address",
+                    "nargs": 1,
+                    "help": "specify host address for this server, default is localhost"
+                },
+
+                    {
                     "name": "port",
                     "type" : "optional",
                     "cmd_arg":  "--port",

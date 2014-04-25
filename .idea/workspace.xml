@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e0432b-41d2-46fb-ac43-965b440cf927" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongoctl/commands/cluster/control.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ops_server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/richardxx.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/cluster.py" afterPath="$PROJECT_DIR$/mongoctl/objects/cluster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/errors.py" afterPath="$PROJECT_DIR$/mongoctl/errors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/cluster/list_clusters.py" afterPath="$PROJECT_DIR$/mongoctl/commands/cluster/list_clusters.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/server/list_servers.py" afterPath="$PROJECT_DIR$/mongoctl/commands/server/list_servers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/mongoctl.py" afterPath="$PROJECT_DIR$/mongoctl/mongoctl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/mongoctl" afterPath="$PROJECT_DIR$/bin/mongoctl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/config.py" afterPath="$PROJECT_DIR$/mongoctl/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl.py" afterPath="$PROJECT_DIR$/mongoctl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/mongoctl_command_config.py" afterPath="$PROJECT_DIR$/mongoctl/mongoctl_command_config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/mongoctl_globals.py" afterPath="$PROJECT_DIR$/mongoctl/mongoctl_globals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/mongoctl_logging.py" afterPath="$PROJECT_DIR$/mongoctl/mongoctl_logging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/mongod.py" afterPath="$PROJECT_DIR$/mongoctl/objects/mongod.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/mongos.py" afterPath="$PROJECT_DIR$/mongoctl/objects/mongos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ops_server.py" afterPath="$PROJECT_DIR$/ops_server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py" afterPath="$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/replicaset_cluster.py" afterPath="$PROJECT_DIR$/mongoctl/objects/replicaset_cluster.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/repository.py" afterPath="$PROJECT_DIR$/mongoctl/repository.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/server.py" afterPath="$PROJECT_DIR$/mongoctl/objects/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/objects/sharded_cluster.py" afterPath="$PROJECT_DIR$/mongoctl/objects/sharded_cluster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/sharding/sharding.py" afterPath="$PROJECT_DIR$/mongoctl/commands/sharding/sharding.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/server/start.py" afterPath="$PROJECT_DIR$/mongoctl/commands/server/start.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/common/status.py" afterPath="$PROJECT_DIR$/mongoctl/commands/common/status.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/commands/server/stop.py" afterPath="$PROJECT_DIR$/mongoctl/commands/server/stop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/tests/test_base.py" afterPath="$PROJECT_DIR$/mongoctl/tests/test_base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongoctl/utils.py" afterPath="$PROJECT_DIR$/mongoctl/utils.py" />
     </list>
     <ignored path="mongoctl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +21,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mongoctl-service$ops_server.coverage" NAME="ops_server Coverage Results" MODIFIED="1393871659994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mongoctl" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -51,30 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="repository.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongoctl/repository.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="31" selection-start="13349" selection-end="13349" vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="9585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ops_server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ops_server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ops_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="52" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1560">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mongoctl/commands/common/status.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="47" selection-start="880" selection-end="880" vertical-scroll-proportion="0.43373495" vertical-offset="0" max-vertical-offset="830">
+            <state line="50" column="44" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.50775194" vertical-offset="488" max-vertical-offset="1875">
               <folding>
-                <element signature="e#22#62#0" expanded="true" />
+                <element signature="e#148#159#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +50,56 @@
       <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongoctl/objects/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="558" column="8" selection-start="20611" selection-end="20611" vertical-scroll-proportion="0.0" vertical-offset="8370" max-vertical-offset="11625">
+            <state line="776" column="0" selection-start="28948" selection-end="28948" vertical-scroll-proportion="0.0" vertical-offset="11190" max-vertical-offset="12015">
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongo_client.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/mongo_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="8" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.0" vertical-offset="773" max-vertical-offset="19800">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongod.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongoctl/objects/mongod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="152" column="40" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.0" vertical-offset="1928" max-vertical-offset="4695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongoctl/commands/common/status.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="0" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="690">
+              <folding>
+                <element signature="e#22#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoctl.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongoctl/mongoctl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="4" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="2625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_uri.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="13" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -110,19 +126,23 @@
         <option value="$PROJECT_DIR$/build/lib.linux-x86_64-2.7/mongoctl/objects/replicaset_cluster.py" />
         <option value="$PROJECT_DIR$/mongoctl/commands/sharding/sharding.py" />
         <option value="$PROJECT_DIR$/mongoctl/commands/cluster/control.py" />
-        <option value="$PROJECT_DIR$/mongoctl/mongoctl_command_config.py" />
         <option value="$PROJECT_DIR$/mongoctl/mongoctl_globals.py" />
         <option value="$PROJECT_DIR$/mongoctl/utils.py" />
-        <option value="$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py" />
         <option value="$PROJECT_DIR$/mongoctl/ops_server.py" />
         <option value="$PROJECT_DIR$/mongoctl/commands/server/list_servers.py" />
-        <option value="$PROJECT_DIR$/mongoctl/repository.py" />
         <option value="$PROJECT_DIR$/bin/mongoctl" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/mongoctl/objects/cluster.py" />
-        <option value="$PROJECT_DIR$/mongoctl/commands/common/status.py" />
         <option value="$PROJECT_DIR$/mongoctl/mongoctl.py" />
+        <option value="$PROJECT_DIR$/mongoctl.py" />
+        <option value="$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py" />
+        <option value="$PROJECT_DIR$/mongoctl/config.py" />
         <option value="$PROJECT_DIR$/ops_server.py" />
+        <option value="$PROJECT_DIR$/mongoctl/commands/common/status.py" />
+        <option value="$PROJECT_DIR$/mongoctl/mongoctl_command_config.py" />
+        <option value="$PROJECT_DIR$/mongoctl/repository.py" />
+        <option value="$PROJECT_DIR$/mongoctl/commands/server/start.py" />
+        <option value="$PROJECT_DIR$/mongoctl/objects/server.py" />
       </list>
     </option>
   </component>
@@ -157,19 +177,32 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongoctl-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongoctl-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mongoctl-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mongoctl" />
@@ -178,25 +211,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -210,11 +229,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -228,11 +247,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mongoctl" />
+              <option name="myItemId" value="mongoctl-service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -244,12 +263,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,6 +280,7 @@
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -285,6 +306,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongoctl.py" />
       <option name="PARAMETERS" value="start-cluster" />
       <RunnerSettings RunnerId="PyDebugRunner" />
@@ -305,12 +327,33 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ops_server.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -323,6 +366,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -347,6 +391,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -370,8 +415,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -384,6 +433,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -406,6 +456,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -425,6 +476,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mongoctl" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -497,28 +549,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1680" height="974" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="52" width="1680" height="974" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.49969825" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.49969825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865497" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23004694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1967411" sideWeight="0.67134506" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30994153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171149" sideWeight="0.67134506" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30985916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33801168" sideWeight="0.5003018" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28304094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36267605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23157895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -532,10 +590,44 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mongoctl/repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="381" column="31" selection-start="13349" selection-end="13349" vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="9585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="52" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1560">
+          <folding>
+            <element signature="e#148#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/commands/common/status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="690">
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/objects/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="558" column="8" selection-start="20611" selection-end="20611" vertical-scroll-proportion="0.0" vertical-offset="8370" max-vertical-offset="11625">
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/dargparse/dargparse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="249" column="33" selection-start="9351" selection-end="9351" vertical-scroll-proportion="0.4088586" vertical-offset="3405" max-vertical-offset="7515" />
@@ -556,21 +648,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongoctl/mongoctl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="14" selection-start="5343" selection-end="5343" vertical-scroll-proportion="0.7649063" vertical-offset="1786" max-vertical-offset="2625" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongoctl/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="71" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.51107323" vertical-offset="0" max-vertical-offset="587" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ops_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="52" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1560">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/lib.linux-x86_64-2.7/mongoctl/objects/replicaset_cluster.py">
@@ -581,18 +661,6 @@
     <entry file="file://$PROJECT_DIR$/docs/managing-clusters.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="61" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.4883721" vertical-offset="405" max-vertical-offset="1125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongoctl/repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="31" selection-start="13349" selection-end="13349" vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="9585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongoctl/objects/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.33849558" vertical-offset="267" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongoctl/objects/cluster.py">
@@ -610,18 +678,162 @@
         <state line="106" column="62" selection-start="3664" selection-end="3664" vertical-scroll-proportion="1.7210145" vertical-offset="0" max-vertical-offset="11925" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongoctl/objects/server.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="558" column="8" selection-start="20611" selection-end="20611" vertical-scroll-proportion="0.0" vertical-offset="7749" max-vertical-offset="11280">
+        <state line="86" column="47" selection-start="3408" selection-end="3408" vertical-scroll-proportion="1.156406" vertical-offset="505" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl.egg-info/SOURCES.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.023219815" vertical-offset="0" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="40" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.7229102" vertical-offset="298" max-vertical-offset="2910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib.linux-x86_64-2.7/mongoctl/objects/mongod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="23" selection-start="7967" selection-end="7967" vertical-scroll-proportion="0.60732114" vertical-offset="2800" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1466" column="0" selection-start="54018" selection-end="54018" vertical-scroll-proportion="0.33333334" vertical-offset="21795" max-vertical-offset="23070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib.linux-x86_64-2.7/mongoctl/objects/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="558" column="8" selection-start="20611" selection-end="20611" vertical-scroll-proportion="0.33333334" vertical-offset="7830" max-vertical-offset="11280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/lib/python2.7/dist-packages/mongoctl-0.7.0-py2.7.egg!/mongoctl/objects/mongod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="66" selection-start="4890" selection-end="4890" vertical-scroll-proportion="0.4184514" vertical-offset="1756" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib.linux-x86_64-2.7/mongoctl/commands/common/dump.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="30" selection-start="5991" selection-end="5991" vertical-scroll-proportion="0.33227345" vertical-offset="2041" max-vertical-offset="4560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="4" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.3100159" vertical-offset="330" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/mongoctl_command_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="88" selection-start="7615" selection-end="7615" vertical-scroll-proportion="0.4165342" vertical-offset="3173" max-vertical-offset="26340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/commands/common/dump.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="60" selection-start="6235" selection-end="6235" vertical-scroll-proportion="0.22575517" vertical-offset="2183" max-vertical-offset="4560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/objects/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="67" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.78488374" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="18" selection-start="4946" selection-end="4946" vertical-scroll-proportion="0.6104651" vertical-offset="1635" max-vertical-offset="9390">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongoctl/commands/common/status.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="880" selection-end="880" vertical-scroll-proportion="0.43373495" vertical-offset="0" max-vertical-offset="830">
+        <state line="39" column="0" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="690">
           <folding>
             <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/mongoctl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="4" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="2625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/processes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="153" selection-end="153" vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/objects/mongod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="40" selection-start="5261" selection-end="5261" vertical-scroll-proportion="0.0" vertical-offset="1928" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/commands/misc/print_uri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="13" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/commands/server/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="333" column="72" selection-start="13608" selection-end="13608" vertical-scroll-proportion="0.4402852" vertical-offset="4283" max-vertical-offset="10155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/mongo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="8" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.0" vertical-offset="773" max-vertical-offset="19800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoctl/objects/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="776" column="0" selection-start="28948" selection-end="28948" vertical-scroll-proportion="0.0" vertical-offset="11190" max-vertical-offset="12015">
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.50775194" vertical-offset="488" max-vertical-offset="1875">
+          <folding>
+            <element signature="e#148#159#0" expanded="true" />
           </folding>
         </state>
       </provider>

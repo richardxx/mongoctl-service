@@ -113,6 +113,7 @@ def lookup_server(server_id):
     server = None
     # lookup server from the db repo first
     if consulting_db_repository():
+        print "\tYes, we can consult db repo."
         server = db_lookup_server(server_id)
 
     # if server is not found then try from file repo
